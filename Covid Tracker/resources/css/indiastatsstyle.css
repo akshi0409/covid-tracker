@@ -1,0 +1,285 @@
+/* ---------------------------------------------- */
+
+
+/*                    GENERAL                     */
+
+
+/* ---------------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+.hide {
+    display: none;
+}
+
+.fadeIn {
+    animation: fade 0.5s ease-in-out;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ---------------------------------------------- */
+
+
+/*                    HEADER                      */
+
+
+/* ---------------------------------------------- */
+
+header {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: rgb(116, 193, 196);
+}
+
+
+/* -------- LOGO -------- */
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.logo p {
+    font-weight: bold;
+    color: blueviolet;
+}
+
+
+/* -------- NAV -------- */
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li:last-child {
+    padding-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: blueviolet;
+    padding: 10px;
+}
+
+
+/* -------- SEARCH COUNTRY -------- */
+
+.search-state {
+    position: relative;
+    top: 10px;
+}
+
+.search-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 30px;
+    z-index: 1;
+    background-color: #111;
+}
+
+.search-box input {
+    width: 360px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding-left: 15px;
+    font-size: 1.1em;
+}
+
+.search-box img {
+    width: 20px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.state-list {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 30px;
+    width: 400px;
+    height: 300px;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-y: scroll;
+}
+
+.state-list ul {
+    width: 100%;
+}
+
+.state-list ul li {
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+}
+
+.state-list ul li:hover {
+    border-left: 1px solid white;
+}
+
+
+/* SCROLL BAR */
+
+.state-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.state-list::-webkit-scrollbar-track {
+    background: #111;
+}
+
+.state-list::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.state-list::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+
+
+/* ---------------------------------------------- */
+
+
+/*                      MAIN                      */
+
+
+/* ---------------------------------------------- */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stats {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../img/bg.jpg');
+    background-size: cover;
+}
+
+.latest-report {
+    width: 80%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.state {
+    height: 100px;
+}
+
+.name {
+    font-size: 2.2em;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.change-state {
+    cursor: pointer;
+    background-color: green;
+    color: #ffffff;
+    padding: 8px 18px;
+    font-size: 16px;
+    border: none;
+}
+
+#reports {
+    color: blueviolet;
+    padding: 10%;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: black;
+    background: transparent;
+    z-index: 3;
+    text-align: end;
+}
+
+
+/* ---------------------------------------------- */
+
+
+/*                    FOOTER                      */
+
+
+/* ---------------------------------------------- */
+
+footer {
+    max-width: 1200px;
+    height: 60px;
+    background-color: #111;
+    margin: 0 auto;
+}
+
+.footer-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.copyright p {
+    color: white;
+}
+
+
+/* ---------------------------------------------- */
+
+
+/*             SCREEN WIDTH < 600px               */
+
+
+/* ---------------------------------------------- */
+
+@media screen and (max-width:600px) {
+    .latest-report {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,189 @@
+/* ---------------------------------------------- */
+
+
+/*                    GENERAL                     */
+
+
+/* ---------------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+.hide {
+    display: none;
+}
+
+.fadeIn {
+    animation: fade 0.5s ease-in-out;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ---------------------------------------------- */
+
+
+/*                    HEADER                      */
+
+
+/* ---------------------------------------------- */
+
+header {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: rgb(116, 193, 196);
+}
+
+
+/* -------- LOGO -------- */
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.logo p {
+    font-weight: bold;
+    color: blueviolet;
+}
+
+
+/* -------- NAV -------- */
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li:last-child {
+    padding-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: blueviolet;
+    padding: 10px;
+}
+
+
+/* ---------------------------------------------- */
+
+
+/*                      MAIN                      */
+
+
+/* ---------------------------------------------- */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 25px;
+    color: tomato;
+    margin-bottom: 10%;
+}
+
+.heading a {
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.content {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../img/bg.jpg');
+    background-size: cover;
+    z-index: 3;
+    color: thistle;
+    padding: 10%;
+    font-size: 19px;
+}
+
+.overview {
+    margin-bottom: 5%;
+}
+
+.prevention {
+    margin-bottom: 5%;
+}
+
+.symptoms {
+    margin-bottom: 5%;
+}
+
+.overview h3 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.prevention h3 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.symptoms h3 {
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+
+/* ---------------------------------------------- */
+
+
+/*                    FOOTER                      */
+
+
+/* ---------------------------------------------- */
+
+footer {
+    max-width: 1200px;
+    height: 60px;
+    background-color: #111;
+    margin: 0 auto;
+}
+
+.footer-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.copyright p {
+    color: white;
+}

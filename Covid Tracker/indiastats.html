@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>India - State wise Stats</title>
+    <link rel="stylesheet" href="resources/css/indiastatsstyle.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="resources/img/logo.png" alt="Covid">
+            <p>COVID-19<br/>STATS</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="info.html">INFO</a></li>
+                <li><a href="indiastats.html">INDIA Statewise</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="stats">
+            <div class="latest-report">
+                <div class="state">
+                    <div class="name">Loading...</div>
+                    <button class="change-state">Change</button>
+                    <div class="search-state">
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Search Indian State....">
+                            <img class="close" src="resources/img/close.svg" alt="">
+                        </div>
+                        <div class="state-list">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="" id="reports"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                <p>Copyright © 2021</p>
+            </div>
+        </div>
+    </footer>
+    <script src="resources/js/states.js"></script>
+</body>
+</html>
